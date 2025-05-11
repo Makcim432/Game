@@ -50,6 +50,7 @@ gameplay = True
 
 bg_sound = pygame.mixer.Sound('music.mp3')
 bg_sound.play(100)
+jump_sound = pygame.mixer.Sound('jump.mp3')
 
 running = True
 while running:
@@ -91,6 +92,7 @@ while running:
         if not is_jump:
             if keys[pygame.K_SPACE]:
                 is_jump = True
+                jump_sound.play()
         else:
             if jump_count >= -10:
                 if jump_count > 0:
