@@ -48,7 +48,8 @@ restart_label_rect = restart_label.get_rect(topleft=(350, 350))
 gameplay = True
 
 
-
+bg_sound = pygame.mixer.Sound('music.mp3')
+bg_sound.play(100)
 
 running = True
 while running:
