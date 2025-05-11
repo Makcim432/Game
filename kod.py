@@ -49,7 +49,7 @@ gameplay = True
 
 
 bg_sound = pygame.mixer.Sound('music.mp3')
-bg_sound.play(100)
+bg_sound.play(-1)
 jump_sound = pygame.mixer.Sound('jump.mp3')
 
 running = True
